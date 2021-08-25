@@ -1,0 +1,93 @@
+<head>
+  <link rel="icon" type="image/png" href="./Images/icons/Favicon.ico"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+<link rel="stylesheet" href="./Payment.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./loader.css">
+<title>Payment</title>
+</head>
+
+<body>
+  <div class="loader_bg">
+    <div class="loader"></div>
+  </div>
+
+<div class="container">
+  <div class="navbar">
+      <div class="logo">
+          <img src="./Images/logo.png" alt="Company Logo" width="125px">
+      </div>
+      <nav>
+          <ul id="MenuItems">
+              <li><a href="./Website.html">Home</a></li>
+              <li><a href="./products.html">Product</a></li>
+              <li><a href="./Contact.html">Contact</a></li>
+              <li><a href="./signlog.html">Account</a></li>
+          </ul>
+      </nav>
+      <a href="./Cart.html"><img src="./Images/cart.png" alt="Cart" width="30px" height="30px"></a>
+      <img src="./Images/menu.png" alt="Cart" class="menu-icon" onclick="menutoggle()">
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="payment">
+    <div class="payment-logo">
+      <p>p</p>
+    </div>    
+    
+    <h2>Payment Gateway</h2>
+    <div class="form">
+      <div class="card space icon-relative">
+        <label class="label">Card holder:</label>
+        <input type="text" class="input" placeholder="Card Holder">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="card space icon-relative">
+        <label class="label">Card number:</label>
+        <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+        <i class="far fa-credit-card"></i>
+      </div>
+      <div class="card-grp space">
+        <div class="card-item icon-relative">
+          <label class="label">Expiry date:</label>
+          <input type="text" name="expiry-data" class="input"  placeholder="00 / 00">
+          <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="card-item icon-relative">
+          <label class="label">CVC:</label>
+          <input type="text" class="input" data-mask="000" placeholder="000">
+          <i class="fas fa-lock"></i>
+        </div>
+      </div>
+        
+      <div class="btn">
+        Pay
+      </div> 
+      
+    </div>
+  </div>
+</div>
+</body>
+
+<script src="./Payment.js"></script>
+<!-------------------PreLoader------------------------>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/61226d38d6e7610a49b168ec/1fdn7la52';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
